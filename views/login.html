@@ -1,0 +1,12 @@
+<div id="loginform">
+
+<h1>{{type}}</h1>
+
+<form name="myloginform" class="ng-scope ng-pristine ng-valid">
+  <div><input placeholder="Email" id="email" type="email" ng-model="username" required class="ng-pristine ng-valid"></div>
+  <div><input placeholder="Password" id="password" type="password" ng-model="password" required class="ng-pristine ng-valid"></div>
+  <label class="error">{{loginError}}<label>
+  <br/><br/>
+  <input type="submit" ng-click="loginOrRegister()" value="{{type}}"></input>
+</form>
+</div>

@@ -1,0 +1,32 @@
+<div id="quizcontent" ng-show="quizProgress">
+	<div ng-show="!quizend">
+		<h2 id="question">{{question}}</h2>
+		<ul id="options">
+			<li ng-repeat="option in options">
+				<label>
+					<input type="radio" name="answer" value="{{option}}">
+					{{option}}
+				</label>
+			</li>
+		</ul>
+		<input ng-hide="buttonSubmit" type="button" ng-click="nextQuestion()" value="Continue"></button>
+		<input ng-show="buttonSubmit" type="button" ng-click="nextQuestion()" value="Submit"></button>
+	</div>
+ 
+	<div ng-show="quizend">
+		<div id="score">You Scored: {{score * 100/quizLength}}%</div>
+		<div ng-repeat="res in result">
+		<h2 id="question">{{res.question}}</h2>
+		<div class="correct" ng-show="res.correctAns">
+			<label>Correct!:</label><br/> 
+			<label>{{res.givenAnswer}}</label>
+		</div>
+		<div class="wrong" ng-show="!res.correctAns">
+			<label>You Answered incorrect</label><br/> 
+			<label>{{res.givenAnswer || 'Not selected any option'}}</label><br/> 
+			<div class="innercorrect"><label>Correct Answer</label><br/> 
+			<label>{{res.CorrectAnswer}}</label></div>
+		</div>
+	</div>
+	</div>
+</div>

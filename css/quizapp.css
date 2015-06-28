@@ -1,0 +1,68 @@
+a{
+	text-decoration:none;
+	color : blue;
+	padding: 10px;
+	font-size : 20px;
+}
+input{
+	padding: 11px 11px;
+	font-size : 18px;
+	margin : 4px;
+}
+input[type=email],input[type=password]{
+	width : 200px;
+}
+input[type=button],input[type=submit]{
+	width : 250px;
+	height:40px;
+	margin-bottom : 10px;
+	background-color: darkviolet;
+	color: white;
+	border : 1px solid darkviolet;
+	border-radius:3px;
+}
+div#loginform,div#quizcontent{
+	background-color: gainsboro;
+	margin: 0 auto 20px;
+	max-width: 380px;
+}
+div#quizcontent{
+	max-width: 640px;
+}
+ul{
+	font-size: 20px;
+}
+li {
+	list-style: none;
+}
+#options {
+	margin: 10px 25px;
+	text-align: left;
+}
+#question{
+	text-align: left;
+	margin-left: 25px;
+}
+h2{
+	color : white;
+}
+#logindiv,#welcomediv{
+	font-size:30px;
+	height:30px;
+	margin-bottom:50px;
+}
+.correct,.wrong{
+	text-align: left;
+	margin-left: 25px;
+	font-size:18px;
+} 
+.correct label,.innercorrect label{
+	color: green !important;
+}
+.wrong label,label.error{
+	color:red;
+}
+div#score{
+	font-size:40px;
+	height:40px;
+}
